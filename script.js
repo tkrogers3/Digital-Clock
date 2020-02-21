@@ -9,7 +9,8 @@ function awesomeClock() {
     
  if (hours > 12) {
    hours = hours - 12;
- } else (hours = 12);
+ } else (hours < 12);
+ 
  
 
   if (hours < 10){
