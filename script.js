@@ -5,23 +5,21 @@ function awesomeClock() {
   var hours = date.getHours();
   var minutes = date.getMinutes();
   var seconds = date.getSeconds();
-  var dayNight = (hours <= 12) ? "AM" : "PM"; /* Ternary operator, greater than 12 hours = PM */
+  var dayNight = (hours < 12) ? "AM" : "PM"; /* Ternary operator, less than 12 hours = AM*/
     
- if (hours > 12) {
-   hours = hours - 12;
- } else (hours < 12);
+ if (hours >= 13) {          /* Sets 24 hour clock to 12 */
+   hours = hours % 12;
+ } 
  
- 
-
-  if (hours < 10){
-      hours = "0" + hours;
+if (hours < 10){
+   hours = "0" + hours;
   }
 
   if (minutes  < 10){
       minutes = "0" + minutes;
   }
 
-  if (seconds < 10){
+  if (seconds < 10 ){
       seconds = "0" + seconds;
   }
 
