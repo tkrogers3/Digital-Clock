@@ -1,0 +1,26 @@
+
+
+
+body{
+   background-image: url(awesome-Inc.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   position:relative;
+    
+   }
+
+#awesomeClock{
+   
+    background-color: red;
+    width: 100%;
+    position: absolute;
+    font-size: 420%;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 440px;       
+    /* Margin sets the clock right where I want it in my 
+    background */
+  }
+   
+
